@@ -1,23 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Monitoring Cuti Polda Jabar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoring Cuti</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
   <style>
-    body { font-family: Arial; margin: 20px; }
-    iframe { border: 1px solid #ccc; width: 100%; height: 500px; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 65%; /* 4:3 Aspect Ratio */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Monitoring Data Cuti Polda Jabar</h1>
+  <header>
+    <h1>📊 Monitoring Cuti Polda Jabar</h1>
+    <p>Data diperbarui langsung dari Google Spreadsheet</p>
+  </header>
 
-  <!-- Embed Google Spreadsheet -->
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs-dBrjpXvLM1tjab2Jn27Z4BLD8ObTIa6dnu4EFJ4OgFLJe8leonmJlc34rNZ7S5mgdPbeoQAjQt6/pubhtml?widget=true&amp;headers=false"></iframe>
-  
-    <!-- Google AdSense -->
-  <div style="margin-top: 30px;">
+  <!-- Tampilkan Google Spreadsheet -->
+  <div class="iframe-container">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs-dBrjpXvLM1tjab2Jn27Z4BLD8ObTIa6dnu4EFJ4OgFLJe8leonmJlc34rNZ7S5mgdPbeoQAjQt6/pubhtml"></iframe>
+  </div>
+
+  <!-- (Opsional) Iklan AdSense -->
+  <div style="margin-top: 40px; text-align: center;">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Nama Iklan Anda -->
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
@@ -28,6 +81,10 @@
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
+
+  <footer>
+    &copy; 2025 Monitoring Dashboard | Dibuat dengan ❤️
+  </footer>
 
 </body>
 </html>
